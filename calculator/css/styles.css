@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid gray;
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto;
+}
+
+.calculator-keypad{
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button{
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #b7e34b;
+    border: 1px solid gray;
+}
+
+.keypad-button:hover{
+    background-color: black;
+    color: rgb(170, 169, 169);
+}
+
+.keypad-button.large{
+    width: 50%;
+    background-color: rgb(59, 58, 58);
+    
+}
+
+.keypad-button.gray{
+    background-color: rgb(59, 58, 58);
+}
+
+.keypad-button.result{
+    background-color: #7d7a79
+}
+
+.keypad-button.zero{
+    width: 50%;
+}
